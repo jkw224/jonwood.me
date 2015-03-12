@@ -1,41 +1,38 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="jonWoodApp">
 <head>
-
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Jonny Lightning</title>
+  <title> Jonny Lightning</title>
   <meta name="description" content="Jon Wood's Website">
   <meta name="author" content="Jonathan Wood">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/Lightning_Fav_32.png">
+  <!-- FONT -->
   <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <!-- STYLE -->
+  <link rel="stylesheet" href="css/main.css">
+  <script src="skel.min.js"></script>
+  <script> skel.init(); </script>
 </head>
 <body>
 
   <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 5%">
-        <h1>Jonathan Wood</h1>
-        <ng-view>
+      <div>
+          <div class="title">
+            <h1>Jonathan Wood</h1>
+          </div>
+          <div class="nav-bar">
+              <ul>
+                  <li><a href="/me">Me</a></li>
+                  <li><a href="/resume">Resume</a></li>
+                  <li><a href="/projects">Projects</a></li> 
+              </ul>
+              <hr>
+          </div>
       </div>
-    </div>
+      <ng-view>
   </div>
 
 <script src="components/angular.min.js"></script>

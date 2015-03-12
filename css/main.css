@@ -1,0 +1,28 @@
+.nav-bar {
+  margin: 0px 5px;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.nav-bar li {
+  display: inline;
+  padding-right: 40px;
+  padding-left: 40px;
+  list-style-type: none;
+  font-weight: lighter;
+}
+
+.title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.resume-content {
+  font-size: 1.2em;
+}
+
+.resume-description {
+  text-align: center;
+  font-size: 1.2em;
+}
