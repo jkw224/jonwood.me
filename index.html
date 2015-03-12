@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="jonWoodApp">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Jonny Lightning</title>
+  <meta name="description" content="Jon Wood's Website">
+  <meta name="author" content="Jonathan Wood">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 5%">
+        <h1>Jonathan Wood</h1>
+        <ng-view>
+      </div>
+    </div>
+  </div>
+
+<script src="components/angular.min.js"></script>
+<script src="components/angular-route.min.js"></script>
+<script src="app.js"></script>
+<script src="views/home/home.js"></script>
+<script src="views/resume/resume.js"></script>
+<script src="views/projects/projects.js"></script>
+</body>
+</html>
